@@ -1,4 +1,4 @@
-module github.com/meirochun/changegit
+module github.com/meirochun/cgit
 
 go 1.23.0
 

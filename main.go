@@ -1,6 +1,6 @@
 package main
 
-import "github.com/meirochun/changegit/cmd"
+import "github.com/meirochun/cgit/cmd"
 
 func main() {
 	cmd.Execute()
