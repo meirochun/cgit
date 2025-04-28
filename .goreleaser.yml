@@ -1,0 +1,37 @@
+builds:
+  - binary: cgit
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    env:
+      CGO_ENABLED: 0
+    flags:
+      - -mod=vendor
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  -
+    name: cgit
+    homepage: "https://github.com/meirochun/cgit"
+    tap:
+      owner: meirochun
+      name: homebrew-cgit
+    description: "A simple git command line tool to show commit history in a tree view."
+    commit_author: meirochun
+    email: meirochun@gmail.com
+
+checksum:
+  - name: cgit
+    algorithm: sha256
+    files:
+      - cgit
+      - cgit.exe
